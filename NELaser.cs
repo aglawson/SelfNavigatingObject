@@ -27,10 +27,10 @@ public class NELaser : MonoBehaviour
             if (hit.collider)
             {
                 lr.SetPosition(1, hit.point);
-                rb.AddForce(0, 0, backForce);
+                rb.AddForce(0, 0, backForce * Time.deltaTime);
                 rb.AddForce(0, upForce * Time.deltaTime, 0);
-                rb.AddForce(rightForce, 0, 0);
-                rb.AddForce(leftForce, 0, 0);
+                rb.AddForce(rightForce * Time.deltaTime, 0, 0);
+                rb.AddForce(leftForce * Time.deltaTime, 0, 0);
             }
         }
         else lr.SetPosition(1, transform.forward);

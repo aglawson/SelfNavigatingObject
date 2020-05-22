@@ -11,7 +11,12 @@ public class PlayerCollision : MonoBehaviour
     {
         if(collisionInfo.collider.tag == "Obstacle")
         {
+            print("Failed");
             movement.enabled = false;
+        }
+        else
+        {
+            print("Success");
         }
     }
 }

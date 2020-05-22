@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class slightRightLaser : MonoBehaviour
+public class rightLaser : MonoBehaviour
 {
 
     private LineRenderer lr;
